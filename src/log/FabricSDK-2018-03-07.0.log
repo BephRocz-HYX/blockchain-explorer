@@ -1,0 +1,31 @@
+2018-03-07 17:45:08.455 [main] INFO  org.hyperledger.fabric.sdk.EventHub 306 connect - Eventhub peer0.org.example.com connect is done with connect status: true 
+2018-03-07 17:45:08.904 [main] INFO  o.h.f.s.t.InstallProposalBuilder 175 createNetModeTransaction - Installing 'marbles::/chaincode/src/::2.0'  Go chaincode from directory: 'E:\娱乐\专利\src\chaincode\src' with source location: 'src\chaincode\src'. chaincodePath:'/chaincode/src/'
+2018-03-07 18:04:09.022 [main] INFO  org.hyperledger.fabric.sdk.EventHub 306 connect - Eventhub peer0.org.example.com connect is done with connect status: true 
+2018-03-07 18:04:10.435 [main] ERROR org.hyperledger.fabric.sdk.Channel 2241 sendProposalToPeers - Sending proposal to 金蝶研究院1 failed because of: gRPC failure=Status{code=UNKNOWN, description=Error starting container: Failed to generate platform-specific docker build: Error returned from build: 1 "can't load package: package /chaincode/src: import "/chaincode/src": cannot import absolute path
+", cause=null}java.lang.Exception: io.grpc.StatusRuntimeException: UNKNOWN: Error starting container: Failed to generate platform-specific docker build: Error returned from build: 1 "can't load package: package /chaincode/src: import "/chaincode/src": cannot import absolute path
+"
+	at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:2241)
+	at org.hyperledger.fabric.sdk.Channel.sendInstantiationProposal(Channel.java:1357)
+	at com.kingdee.kchain.fabric.sdk.chaincode.ChaincodeManager.instantiate(ChaincodeManager.java:149)
+	at com.kingdee.kchain.fabric.sdk.chaincode.InstantiateRequest.instantiate(InstantiateRequest.java:67)
+	at com.kingdee.blockchainquery.util.Test.main(Test.java:77)
+Caused by: io.grpc.StatusRuntimeException: UNKNOWN: Error starting container: Failed to generate platform-specific docker build: Error returned from build: 1 "can't load package: package /chaincode/src: import "/chaincode/src": cannot import absolute path
+"
+	at io.grpc.Status.asRuntimeException(Status.java:526)
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:427)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:419)
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:60)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:493)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$500(ClientCallImpl.java:422)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:525)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:102)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2018-03-07 18:05:28.455 [main] INFO  org.hyperledger.fabric.sdk.EventHub 306 connect - Eventhub peer0.org.example.com connect is done with connect status: true 
+2018-03-07 18:14:05.731 [main] INFO  org.hyperledger.fabric.sdk.EventHub 306 connect - Eventhub peer0.org.example.com connect is done with connect status: true 
+2018-03-07 18:19:27.406 [main] INFO  org.hyperledger.fabric.sdk.EventHub 306 connect - Eventhub peer0.org.example.com connect is done with connect status: true 
+2018-03-07 18:19:27.710 [main] INFO  o.h.f.s.t.InstallProposalBuilder 175 createNetModeTransaction - Installing 'marbles::chaincode/src::2.1'  Go chaincode from directory: 'E:\娱乐\专利\src\chaincode\src' with source location: 'src\chaincode\src'. chaincodePath:'chaincode/src'
+2018-03-07 18:19:54.202 [main] INFO  org.hyperledger.fabric.sdk.EventHub 306 connect - Eventhub peer0.org.example.com connect is done with connect status: true 

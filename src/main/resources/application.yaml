@@ -1,0 +1,38 @@
+fabric:
+  client:
+    user:
+      name: marbles
+      mspId: OrgMSP
+      certPath: src/Admin1@org.example.com-cert.pem
+      privateKeyPath: src/8ef21e6aa978ede012a026bf3ff5bbb71d19e354eae71f28ce88ad5627914dfe_sk
+    channels:
+    - name: mychannel
+      peers:
+      - name: 金蝶研究院1
+        url: grpc://172.20.105.85:7051
+      - name: 金蝶研究院2
+        url: grpc://172.20.105.85:8051
+      - name: 金蝶研究院3
+        url: grpc://172.20.105.85:9051
+      - name: 金蝶研究院4
+        url: grpc://172.20.105.85:10051
+      orderers:
+      - name: fabric-orderer
+        url: grpc://172.20.105.85:7050
+      eventHubs:
+      - name: peer0.org.example.com
+        url: grpc://172.20.105.85:7053
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      database: FabricDB
+      username: shikai
+      password: adminpw
+mongofabric:
+  data:
+    block: blockinfo
+    transaction: transactioninfo
+    peer: peerinfo

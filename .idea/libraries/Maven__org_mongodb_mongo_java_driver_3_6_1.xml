@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mongodb:mongo-java-driver:3.6.1">
+    <CLASSES>
+      <root url="jar://D:/Maven仓库/仓库/org/mongodb/mongo-java-driver/3.6.1/mongo-java-driver-3.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Maven仓库/仓库/org/mongodb/mongo-java-driver/3.6.1/mongo-java-driver-3.6.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Maven仓库/仓库/org/mongodb/mongo-java-driver/3.6.1/mongo-java-driver-3.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
