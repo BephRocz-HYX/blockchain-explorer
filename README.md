@@ -1,0 +1,2 @@
+# blockchain-explorer
+基于Fabric搭建的联盟链采用Java SDK调底层区块和交易相关的详细信息及查询等，提供API给前端做区块链浏览器
